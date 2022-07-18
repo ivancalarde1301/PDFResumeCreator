@@ -1,6 +1,6 @@
-﻿namespace PDFResumeCreator
+﻿namespace ResumeCreator
 {
-    partial class Form1
+    partial class ResumeCreator
     {
         /// <summary>
         /// Required designer variable.
@@ -86,6 +86,7 @@
             this.textBoxTrack = new System.Windows.Forms.TextBox();
             this.textBoxPrimaryEducation = new System.Windows.Forms.TextBox();
             this.buttonCreateResume = new System.Windows.Forms.Button();
+            this.buttonImportInformation = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelPDFResumeCreator
@@ -95,7 +96,7 @@
             this.labelPDFResumeCreator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelPDFResumeCreator.Location = new System.Drawing.Point(12, 9);
             this.labelPDFResumeCreator.Name = "labelPDFResumeCreator";
-            this.labelPDFResumeCreator.Size = new System.Drawing.Size(314, 42);
+            this.labelPDFResumeCreator.Size = new System.Drawing.Size(309, 41);
             this.labelPDFResumeCreator.TabIndex = 0;
             this.labelPDFResumeCreator.Text = "PDF Resume Creator";
             // 
@@ -239,7 +240,6 @@
             this.labelAddress.Size = new System.Drawing.Size(78, 20);
             this.labelAddress.TabIndex = 17;
             this.labelAddress.Text = "Address";
-            this.labelAddress.Click += new System.EventHandler(this.labelAddress_Click);
             // 
             // labelUnitBlockLot
             // 
@@ -591,18 +591,30 @@
             // buttonCreateResume
             // 
             this.buttonCreateResume.ForeColor = System.Drawing.Color.Black;
-            this.buttonCreateResume.Location = new System.Drawing.Point(555, 434);
+            this.buttonCreateResume.Location = new System.Drawing.Point(641, 431);
             this.buttonCreateResume.Name = "buttonCreateResume";
             this.buttonCreateResume.Size = new System.Drawing.Size(147, 45);
             this.buttonCreateResume.TabIndex = 59;
             this.buttonCreateResume.Text = "Create Resume!";
             this.buttonCreateResume.UseVisualStyleBackColor = true;
+            this.buttonCreateResume.Click += new System.EventHandler(this.buttonCreateResume_Click);
             // 
-            // Form1
+            // buttonImportInformation
+            // 
+            this.buttonImportInformation.ForeColor = System.Drawing.Color.Black;
+            this.buttonImportInformation.Location = new System.Drawing.Point(474, 431);
+            this.buttonImportInformation.Name = "buttonImportInformation";
+            this.buttonImportInformation.Size = new System.Drawing.Size(147, 45);
+            this.buttonImportInformation.TabIndex = 60;
+            this.buttonImportInformation.Text = "Import Information";
+            this.buttonImportInformation.UseVisualStyleBackColor = true;
+            // 
+            // ResumeCreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 563);
+            this.Controls.Add(this.buttonImportInformation);
             this.Controls.Add(this.buttonCreateResume);
             this.Controls.Add(this.textBoxPrimaryEducation);
             this.Controls.Add(this.textBoxTrack);
@@ -663,7 +675,7 @@
             this.Controls.Add(this.labelPDFResumeCreator);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
+            this.Name = "ResumeCreator";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PDF Resume Creator";
@@ -732,6 +744,7 @@
         private System.Windows.Forms.TextBox textBoxTrack;
         private System.Windows.Forms.TextBox textBoxPrimaryEducation;
         private System.Windows.Forms.Button buttonCreateResume;
+        private System.Windows.Forms.Button buttonImportInformation;
     }
 }
 

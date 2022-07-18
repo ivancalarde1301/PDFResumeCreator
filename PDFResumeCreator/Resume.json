@@ -1,0 +1,43 @@
+{
+    "Personal Information": {
+      "First Name": "Miguel Ivan",
+      "Middle Name": "Fernandez",
+      "Last Name": "Calarde",
+      "Position": "Programmer/Web Developer",
+      "Email": "ivan.calarde1301@gmail.com",
+      "Phone": "(+63)927 678 4465",
+      "URL": "https://github.com/ivancalarde1301",
+      "Address": {
+        "Unit/Block/Lot": "Unit D",
+        "Street": "F. Aguilar Street",
+        "Barangay": "Pulang Lupa Dos",
+        "Zip Code": "1742",
+        "City": "Las Piñas City",
+        "Province": "Metro Manila",
+        "Region": "National Capital Region (NCR)"
+      }
+    },
+    "Career Objective": {
+      "Career Objective": "Gathered all experiences related to design mostly from being a freelance artist. Currently studying BS Computer Engineering while getting clients locally and internationally for digital and graphic art commissions. My goal is to use my design skills to be a Web Developer or a Programmer."
+    },
+    "Work Experience": {
+      "Work Experience 1": {
+        "Work": "Freelance Digital and Graphic Artist",
+        "Date": "2022-Present",
+        "Description 1": "Worked as a freelance artist in the field of digital arts."
+      },
+      "Work Experience 2": {
+        "Work": "Freelance Traditional Artist",
+        "Date": "2020-2021",
+        "Description 1": "Worked as a traditional artist in the field of traditional arts."
+      }
+    },
+    "Education": {
+        "Tertiary Education": "Polytechnic University of the Philippines - Sta. Mesa",
+        "Course": "BS Computer Engineering",
+        "Secondary Education": "University of Perpetual Help System DALTA - Las Piñas",
+        "Track": "Science, Technology, Engineering, and Mathematics",
+        "Primary Education": "Institution": "Young Achiever's International School",
+        "Date": "2006-2017"
+      }
+}
