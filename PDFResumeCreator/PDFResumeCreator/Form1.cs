@@ -16,14 +16,6 @@ using iTextSharp.text.pdf;
 
 namespace ResumeCreator
 {
-    public class Resume
-    {
-        public string[] PersonalInformation { get; set; }
-        public string[] Address { get; set; }
-        public string CareerObjective { get; set; }
-        public string[] WorkExperience { get; set; }
-        public string Education { get; set; }
-    }
     public partial class ResumeCreator : Form
     {
         public class Resume
@@ -63,15 +55,24 @@ namespace ResumeCreator
 
         private void buttonImportInformation_Click(object sender, EventArgs e)
         {
-            var jsonFilePath = @"C:\Users\ivanc\source\repos\PDFResumeConverter\Resume.json";
-            string jsonFileRead = File.ReadAllText(jsonFilePath);
+            try
+            {
+                var jsonFilePath = @"C:\Users\ivanc\source\repos\PDFResumeConverter\Resume.json";
+                string jsonFileRead = File.ReadAllText(jsonFilePath);
 
-            Resume c = JsonConvert.DeserializeObject<Resume>(jsonFileRead);
+                Resume convert = JsonConvert.DeserializeObject<Resume>(jsonFileRead);
+                textBoxFirstName.Text = convert.Name;
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void buttonCreateResume_Click(object sender, EventArgs e)
         {
-
+            Document docx = new Document();
+            PdfWriter.GetInstance(docx, new FileStream(@"C:\Users\ivanc\source\repos\PDFResumeConverter\Resume.pdf", FileMode.Create));
         }
     }
 
