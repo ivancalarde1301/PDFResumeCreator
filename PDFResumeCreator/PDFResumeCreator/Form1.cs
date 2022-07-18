@@ -61,7 +61,7 @@ namespace ResumeCreator
                 string jsonFileRead = File.ReadAllText(jsonFilePath);
 
                 Resume convert = JsonConvert.DeserializeObject<Resume>(jsonFileRead);
-                textBoxFirstName.Text = convert.Name;
+                textBoxFirstName.Text = convert.FirstName;
             }
             catch (Exception)
             {
@@ -72,7 +72,8 @@ namespace ResumeCreator
         private void buttonCreateResume_Click(object sender, EventArgs e)
         {
             Document docx = new Document();
-            PdfWriter.GetInstance(docx, new FileStream(@"C:\Users\ivanc\source\repos\PDFResumeConverter\Resume.pdf", FileMode.Create));
+            PdfWriter.GetInstance(docx, new FileStream(@"C:\Users\ivanc\Downloads\Resume.pdf", FileMode.Create));
+            docx.Open();
         }
     }
 
