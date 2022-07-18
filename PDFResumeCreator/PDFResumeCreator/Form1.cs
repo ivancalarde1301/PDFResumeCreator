@@ -16,5 +16,10 @@ namespace PDFResumeCreator
         {
             InitializeComponent();
         }
+
+        private void labelAddress_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
