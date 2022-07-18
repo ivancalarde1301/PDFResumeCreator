@@ -1,0 +1,11 @@
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\bin\Debug\PDFResumeCreator.exe.config
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\bin\Debug\PDFResumeCreator.exe
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\bin\Debug\PDFResumeCreator.pdb
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\obj\Debug\PDFResumeCreator.csproj.AssemblyReference.cache
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\obj\Debug\PDFResumeCreator.csproj.SuggestedBindingRedirects.cache
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\obj\Debug\PDFResumeCreator.Form1.resources
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\obj\Debug\PDFResumeCreator.Properties.Resources.resources
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\obj\Debug\PDFResumeCreator.csproj.GenerateResource.cache
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\obj\Debug\PDFResumeCreator.csproj.CoreCompileInputs.cache
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\obj\Debug\PDFResumeCreator.exe
+C:\Users\ivanc\source\repos\PDFResumeCreator\PDFResumeCreator\obj\Debug\PDFResumeCreator.pdb

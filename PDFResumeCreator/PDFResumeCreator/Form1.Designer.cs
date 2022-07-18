@@ -85,6 +85,7 @@
             this.textBoxSecondaryEducation = new System.Windows.Forms.TextBox();
             this.textBoxTrack = new System.Windows.Forms.TextBox();
             this.textBoxPrimaryEducation = new System.Windows.Forms.TextBox();
+            this.buttonCreateResume = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelPDFResumeCreator
@@ -587,11 +588,22 @@
             this.textBoxPrimaryEducation.Size = new System.Drawing.Size(314, 22);
             this.textBoxPrimaryEducation.TabIndex = 58;
             // 
+            // buttonCreateResume
+            // 
+            this.buttonCreateResume.ForeColor = System.Drawing.Color.Black;
+            this.buttonCreateResume.Location = new System.Drawing.Point(555, 434);
+            this.buttonCreateResume.Name = "buttonCreateResume";
+            this.buttonCreateResume.Size = new System.Drawing.Size(147, 45);
+            this.buttonCreateResume.TabIndex = 59;
+            this.buttonCreateResume.Text = "Create Resume!";
+            this.buttonCreateResume.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 563);
+            this.Controls.Add(this.buttonCreateResume);
             this.Controls.Add(this.textBoxPrimaryEducation);
             this.Controls.Add(this.textBoxTrack);
             this.Controls.Add(this.textBoxSecondaryEducation);
@@ -650,7 +662,10 @@
             this.Controls.Add(this.labelPersonalInformation);
             this.Controls.Add(this.labelPDFResumeCreator);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PDF Resume Creator";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -716,6 +731,7 @@
         private System.Windows.Forms.TextBox textBoxSecondaryEducation;
         private System.Windows.Forms.TextBox textBoxTrack;
         private System.Windows.Forms.TextBox textBoxPrimaryEducation;
+        private System.Windows.Forms.Button buttonCreateResume;
     }
 }
 
