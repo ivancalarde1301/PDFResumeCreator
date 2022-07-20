@@ -33,8 +33,8 @@ namespace PDFResumeCreate
             public string URL { get; set; }
             public string UBL { get; set; }
             public string Street { get; set; }
+            public string Village { get; set; }
             public string Barangay { get; set; }
-            public string ZipCode { get; set; }
             public string City { get; set; }
             public string Province { get; set; }
             public string Region { get; set; }
@@ -66,8 +66,8 @@ namespace PDFResumeCreate
             textBoxURL.Text = convert.URL;
             textBoxUBL.Text = convert.UBL;
             textBoxStreet.Text = convert.Street;
+            textBoxVillage.Text = convert.Village;
             textBoxBarangay.Text = convert.Barangay;
-            textBoxZipCode.Text = convert.ZipCode;
             textBoxCity.Text = convert.City;
             textBoxProvince.Text = convert.Province;
             textBoxRegion.Text = convert.Region;
@@ -86,6 +86,274 @@ namespace PDFResumeCreate
 
         private void buttonCreateResume_Click(object sender, EventArgs e)
         {
+            Boolean isFill = true;
+            if (textBoxFirstName.Text == "")
+            {
+                isFill = false;
+                textBoxFirstName.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxFirstName.BackColor = Color.White;
+            }
+            if (textBoxMiddleName.Text == "")
+            {
+                isFill = false;
+                textBoxMiddleName.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxMiddleName.BackColor = Color.White;
+            }
+            if (textBoxLastName.Text == "")
+            {
+                isFill = false;
+                textBoxLastName.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxLastName.BackColor = Color.White;
+            }
+            if (textBoxPosition.Text == "")
+            {
+                isFill = false;
+                textBoxPosition.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxPosition.BackColor = Color.White;
+            }
+            if (textBoxEmail.Text == "")
+            {
+                isFill = false;
+                textBoxEmail.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxEmail.BackColor = Color.White;
+            }
+            if (textBoxPhone.Text == "")
+            {
+                isFill = false;
+                textBoxPhone.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxPhone.BackColor = Color.White;
+            }
+            if (textBoxURL.Text == "")
+            {
+                isFill = false;
+                textBoxURL.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxURL.BackColor = Color.White;
+            }
+            if (textBoxUBL.Text == "")
+            {
+                isFill = false;
+                textBoxUBL.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxUBL.BackColor = Color.White;
+            }
+            if (textBoxStreet.Text == "")
+            {
+                isFill = false;
+                textBoxStreet.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxStreet.BackColor = Color.White;
+            }
+            if (textBoxVillage.Text == "")
+            {
+                isFill = false;
+                textBoxVillage.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxVillage.BackColor = Color.White;
+            }
+            if (textBoxBarangay.Text == "")
+            {
+                isFill = false;
+                textBoxBarangay.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxBarangay.BackColor = Color.White;
+            }
+            if (textBoxCity.Text == "")
+            {
+                isFill = false;
+                textBoxCity.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxCity.BackColor = Color.White;
+            }
+            if (textBoxProvince.Text == "")
+            {
+                isFill = false;
+                textBoxProvince.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxProvince.BackColor = Color.White;
+            }
+            if (textBoxRegion.Text == "")
+            {
+                isFill = false;
+                textBoxRegion.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxRegion.BackColor = Color.White;
+            }
+            if (textBoxWorkExperience1.Text == "")
+            {
+                isFill = false;
+                textBoxWorkExperience1.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxWorkExperience1.BackColor = Color.White;
+            }
+            if (textBoxWorkExperience1Date.Text == "")
+            {
+                isFill = false;
+                textBoxWorkExperience1Date.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxWorkExperience1Date.BackColor = Color.White;
+            }
+            if (textBoxWorkExperience1Description.Text == "")
+            {
+                isFill = false;
+                textBoxWorkExperience1Description.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxWorkExperience1Description.BackColor = Color.White;
+            }
+            if (textBoxWorkExperience2.Text == "")
+            {
+                isFill = false;
+                textBoxWorkExperience2.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxWorkExperience2.BackColor = Color.White;
+            }
+            if (textBoxWorkExperience2Date.Text == "")
+            {
+                isFill = false;
+                textBoxWorkExperience2Date.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxWorkExperience2Date.BackColor = Color.White;
+            }
+            if (textBoxWorkExperience2Description.Text == "")
+            {
+                isFill = false;
+                textBoxWorkExperience2Description.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxWorkExperience2Description.BackColor = Color.White;
+            }
+            if (textBoxTertiaryEducation.Text == "")
+            {
+                isFill = false;
+                textBoxTertiaryEducation.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxTertiaryEducation.BackColor = Color.White;
+            }
+            if (textBoxCourse.Text == "")
+            {
+                isFill = false;
+                textBoxCourse.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxCourse.BackColor = Color.White;
+            }
+            if (textBoxSecondaryEducation.Text == "")
+            {
+                isFill = false;
+                textBoxSecondaryEducation.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxSecondaryEducation.BackColor = Color.White;
+            }
+            if (textBoxTrack.Text == "")
+            {
+                isFill = false;
+                textBoxTrack.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxTrack.BackColor = Color.White;
+            }
+            if (textBoxPrimaryEducation.Text == "")
+            {
+                isFill = false;
+                textBoxPrimaryEducation.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                textBoxPrimaryEducation.BackColor = Color.White;
+            }
+            if (!isFill)
+            {
+                MessageBox.Show("Fill the blanks with your information.");
+            }
+            else
+            {
+                MessageBox.Show("Resume created successfully!");
+            }
+
+
+
+
+
+
+
+
+
+
+            /*textBoxMiddleName.Text == null || textBoxLastName.Text == null ||
+            textBoxPosition.Text == null || textBoxEmail.Text == null || textBoxPhone.Text == null ||
+            textBoxURL.Text == null || textBoxUBL.Text == null || textBoxStreet.Text == null ||
+            textBoxBarangay.Text == null || textBoxZipCode.Text == null || textBoxCity.Text == null ||
+            textBoxProvince.Text == null || textBoxRegion.Text == null || textBoxWorkExperience1.Text == null ||
+            textBoxWorkExperience1Date.Text == null || textBoxWorkExperience1Description.Text == null || textBoxWorkExperience2.Text == null ||
+            textBoxWorkExperience2Date.Text == null || textBoxWorkExperience2Description.Text == null || textBoxTertiaryEducation.Text == null ||
+            textBoxCourse.Text == null || textBoxSecondaryEducation.Text == null || textBoxTrack.Text == null ||
+            textBoxPrimaryEducation.Text == null)*//*
+        {
+            MessageBox.Show("Fill the blanks with your information.");
+        }
+        if (textBoxFirstName.Text == "" || textBoxMiddleName.Text == "" || textBoxLastName.Text == "" ||
+            textBoxPosition.Text == "" || textBoxEmail.Text == "" || textBoxPhone.Text == "" ||
+            textBoxURL.Text == "" || textBoxUBL.Text == "" || textBoxStreet.Text == "" ||
+            textBoxBarangay.Text == "" || textBoxZipCode.Text == "" || textBoxCity.Text == "" ||
+            textBoxProvince.Text == "" || textBoxRegion.Text == "" || textBoxWorkExperience1.Text == "" ||
+            textBoxWorkExperience1Date.Text == "" || textBoxWorkExperience1Description.Text == "" || textBoxWorkExperience2.Text == "" ||
+            textBoxWorkExperience2Date.Text == "" || textBoxWorkExperience2Description.Text == "" || textBoxTertiaryEducation.Text == "" ||
+            textBoxCourse.Text == "" || textBoxSecondaryEducation.Text == "" || textBoxTrack.Text == "" ||
+            textBoxPrimaryEducation.Text == "")
+        {
+            MessageBox.Show("PDF Resume Created!");
+        }*/
             Document docx = new Document();
             PdfWriter.GetInstance(docx, new FileStream(@"C:\Users\ivanc\Downloads\Resume.pdf", FileMode.Create));
             docx.Open();
@@ -95,8 +363,8 @@ namespace PDFResumeCreate
             Paragraph email = new Paragraph(textBoxEmail.Text, FontFactory.GetFont("Arial", 8));
             Paragraph phone = new Paragraph(textBoxPhone.Text, FontFactory.GetFont("Arial", 8));
             Paragraph url = new Paragraph(textBoxURL.Text, FontFactory.GetFont("Arial", 8));
-            Paragraph address = new Paragraph(textBoxUBL.Text + "," + textBoxStreet.Text + "," + textBoxBarangay.Text + "," +
-                                              textBoxZipCode.Text + "," + textBoxCity.Text + "," + textBoxProvince.Text + "," +
+            Paragraph address = new Paragraph(textBoxUBL.Text + "," + textBoxStreet.Text + "," + textBoxVillage.Text + "," +
+                                              textBoxBarangay.Text + "," + textBoxCity.Text + "," + textBoxProvince.Text + "," +
                                               textBoxRegion.Text, FontFactory.GetFont("Arial", 8));
             Paragraph workexperience = new Paragraph(labelWorkExperience.Text, FontFactory.GetFont("Arial", 15));
             Paragraph workexperience1work = new Paragraph(textBoxWorkExperience1.Text, FontFactory.GetFont("Arial", 12));
@@ -114,7 +382,31 @@ namespace PDFResumeCreate
             Paragraph track = new Paragraph(textBoxTrack.Text, FontFactory.GetFont("Arial", 8));
             Paragraph primaryeducationlabel = new Paragraph(labelPrimaryEducation.Text, FontFactory.GetFont("Arial", 12));
             Paragraph primaryeducation = new Paragraph(textBoxPrimaryEducation.Text, FontFactory.GetFont("Arial", 10));
-            MessageBox.Show("PDF Resume Created!");
+            textBoxFirstName.Text = "";
+            textBoxMiddleName.Text = "";
+            textBoxLastName.Text = "";
+            textBoxPosition.Text = "";
+            textBoxEmail.Text = "";
+            textBoxPhone.Text = "";
+            textBoxURL.Text = "";
+            textBoxUBL.Text = "";
+            textBoxStreet.Text = "";
+            textBoxVillage.Text = "";
+            textBoxBarangay.Text = "";
+            textBoxCity.Text = "";
+            textBoxProvince.Text = "";
+            textBoxRegion.Text = "";
+            textBoxWorkExperience1.Text = "";
+            textBoxWorkExperience1Date.Text = "";
+            textBoxWorkExperience1Description.Text = "";
+            textBoxWorkExperience2.Text = "";
+            textBoxWorkExperience2Date.Text = "";
+            textBoxWorkExperience2Description.Text = "";
+            textBoxTertiaryEducation.Text = "";
+            textBoxCourse.Text = "";
+            textBoxSecondaryEducation.Text = "";
+            textBoxTrack.Text = "";
+            textBoxPrimaryEducation.Text = "";
             docx.Add(separator);
             docx.Add(name);
             docx.Add(position);

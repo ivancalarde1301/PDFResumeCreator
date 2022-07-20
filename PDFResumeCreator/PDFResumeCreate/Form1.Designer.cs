@@ -57,14 +57,14 @@
             this.textBoxRegion = new System.Windows.Forms.TextBox();
             this.textBoxProvince = new System.Windows.Forms.TextBox();
             this.textBoxCity = new System.Windows.Forms.TextBox();
-            this.textBoxZipCode = new System.Windows.Forms.TextBox();
             this.textBoxBarangay = new System.Windows.Forms.TextBox();
+            this.textBoxVillage = new System.Windows.Forms.TextBox();
             this.textBoxStreet = new System.Windows.Forms.TextBox();
             this.labelRegion = new System.Windows.Forms.Label();
             this.labelProvince = new System.Windows.Forms.Label();
             this.labelCity = new System.Windows.Forms.Label();
-            this.labelZipCode = new System.Windows.Forms.Label();
             this.labelBarangay = new System.Windows.Forms.Label();
+            this.labelVillage = new System.Windows.Forms.Label();
             this.labelStreet = new System.Windows.Forms.Label();
             this.textBoxUBL = new System.Windows.Forms.TextBox();
             this.labelUnitBlockLot = new System.Windows.Forms.Label();
@@ -339,19 +339,19 @@
             this.textBoxCity.Size = new System.Drawing.Size(144, 22);
             this.textBoxCity.TabIndex = 89;
             // 
-            // textBoxZipCode
-            // 
-            this.textBoxZipCode.Location = new System.Drawing.Point(114, 364);
-            this.textBoxZipCode.Name = "textBoxZipCode";
-            this.textBoxZipCode.Size = new System.Drawing.Size(144, 22);
-            this.textBoxZipCode.TabIndex = 88;
-            // 
             // textBoxBarangay
             // 
-            this.textBoxBarangay.Location = new System.Drawing.Point(114, 338);
+            this.textBoxBarangay.Location = new System.Drawing.Point(114, 364);
             this.textBoxBarangay.Name = "textBoxBarangay";
             this.textBoxBarangay.Size = new System.Drawing.Size(144, 22);
-            this.textBoxBarangay.TabIndex = 87;
+            this.textBoxBarangay.TabIndex = 88;
+            // 
+            // textBoxVillage
+            // 
+            this.textBoxVillage.Location = new System.Drawing.Point(114, 338);
+            this.textBoxVillage.Name = "textBoxVillage";
+            this.textBoxVillage.Size = new System.Drawing.Size(144, 22);
+            this.textBoxVillage.TabIndex = 87;
             // 
             // textBoxStreet
             // 
@@ -390,25 +390,25 @@
             this.labelCity.TabIndex = 83;
             this.labelCity.Text = "City";
             // 
-            // labelZipCode
-            // 
-            this.labelZipCode.AutoSize = true;
-            this.labelZipCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelZipCode.Location = new System.Drawing.Point(16, 367);
-            this.labelZipCode.Name = "labelZipCode";
-            this.labelZipCode.Size = new System.Drawing.Size(62, 16);
-            this.labelZipCode.TabIndex = 82;
-            this.labelZipCode.Text = "Zip Code";
-            // 
             // labelBarangay
             // 
             this.labelBarangay.AutoSize = true;
             this.labelBarangay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelBarangay.Location = new System.Drawing.Point(16, 341);
+            this.labelBarangay.Location = new System.Drawing.Point(16, 367);
             this.labelBarangay.Name = "labelBarangay";
             this.labelBarangay.Size = new System.Drawing.Size(66, 16);
-            this.labelBarangay.TabIndex = 81;
+            this.labelBarangay.TabIndex = 82;
             this.labelBarangay.Text = "Barangay";
+            // 
+            // labelVillage
+            // 
+            this.labelVillage.AutoSize = true;
+            this.labelVillage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelVillage.Location = new System.Drawing.Point(16, 341);
+            this.labelVillage.Name = "labelVillage";
+            this.labelVillage.Size = new System.Drawing.Size(49, 16);
+            this.labelVillage.TabIndex = 81;
+            this.labelVillage.Text = "Village";
             // 
             // labelStreet
             // 
@@ -623,14 +623,14 @@
             this.Controls.Add(this.textBoxRegion);
             this.Controls.Add(this.textBoxProvince);
             this.Controls.Add(this.textBoxCity);
-            this.Controls.Add(this.textBoxZipCode);
             this.Controls.Add(this.textBoxBarangay);
+            this.Controls.Add(this.textBoxVillage);
             this.Controls.Add(this.textBoxStreet);
             this.Controls.Add(this.labelRegion);
             this.Controls.Add(this.labelProvince);
             this.Controls.Add(this.labelCity);
-            this.Controls.Add(this.labelZipCode);
             this.Controls.Add(this.labelBarangay);
+            this.Controls.Add(this.labelVillage);
             this.Controls.Add(this.labelStreet);
             this.Controls.Add(this.textBoxUBL);
             this.Controls.Add(this.labelUnitBlockLot);
@@ -689,14 +689,14 @@
         private System.Windows.Forms.TextBox textBoxRegion;
         private System.Windows.Forms.TextBox textBoxProvince;
         private System.Windows.Forms.TextBox textBoxCity;
-        private System.Windows.Forms.TextBox textBoxZipCode;
         private System.Windows.Forms.TextBox textBoxBarangay;
+        private System.Windows.Forms.TextBox textBoxVillage;
         private System.Windows.Forms.TextBox textBoxStreet;
         private System.Windows.Forms.Label labelRegion;
         private System.Windows.Forms.Label labelProvince;
         private System.Windows.Forms.Label labelCity;
-        private System.Windows.Forms.Label labelZipCode;
         private System.Windows.Forms.Label labelBarangay;
+        private System.Windows.Forms.Label labelVillage;
         private System.Windows.Forms.Label labelStreet;
         private System.Windows.Forms.TextBox textBoxUBL;
         private System.Windows.Forms.Label labelUnitBlockLot;
