@@ -1,38 +1,27 @@
 {
-    "PersonalInformation": {
-        "FirstName": "Miguel Ivan",
-        "MiddleName": "Fernandez",
-        "LastName": "Calarde",
-        "Position": "Programmer/Web Developer",
-        "Email": "ivan.calarde1301@gmail.com",
-        "Phone": "(+63)927 678 4465",
-        "URL": "https://github.com/ivan.calarde1301"
-    },
-    "Address": {
-        "UBL": "Unit D",
-        "Street": "F. Aguilar Street",
-        "Barangay": "Pulang Lupa Dos",
-        "Zip Code": "1742",
-        "City": "Las Pinas City",
-        "Province": "Metro Manila",
-        "Region": "National Capital Region"
-    },
-    "CareerObjective": {
-        "CareerObjective": "Gathered all experiences related to design mostly from being a freelance artist. Currently studying BS Computer Engineering while getting clients locally and internationally for digital and graphic art commissions. My goal is to use my design skills to be a Programmer or a Web Developer."
-    },
-    "WorkExperience": {
-        "WorkExperience1Work": "Freelance Digital and Graphic Artist",
-        "WorkExperience1Date": "2022-Present",
-        "WorkExperience1Description": "Worked as a freelance artist in the field of digital arts.",
-        "WorkExperience2Work": "Freelance Traditional Artist",
-        "WorkExperience2Date": "2020-2021",
-        "WorkExperience2Description": "Worked as a freelance artist in the field of traditional arts.",
-    },
-    "Education": {
-        "TertiaryEducation": "Polytechnic University of the Philippines - Sta. Mesa",
-        "Course": "BS Computer Engineering",
-        "SecondaryEducation": "University of Perpetual Help System DALTA - Las Pinas",
-        "Track": "Science, Technology, Engineering, and Mathematics",
-        "PrimaryEducation": "Young Achiever's International School"
-    }
+    "FirstName": "Miguel Ivan",
+    "MiddleName": "Fernandez",
+    "LastName": "Calarde",
+    "Position": "Programmer/Web Developer",
+    "Email": "ivan.calarde1301@gmail.com",
+    "Phone": "(+63)927 678 4465",
+    "URL": "https://github.com/ivan.calarde1301",
+    "UBL": "Unit D",
+    "Street": "F. Aguilar Street",
+    "Barangay": "Pulang Lupa Dos",
+    "Zip Code": "1742",
+    "City": "Las Pinas City",
+    "Province": "Metro Manila",
+    "Region": "National Capital Region",
+    "WorkExperience1Work": "Freelance Digital and Graphic Artist",
+    "WorkExperience1Date": "2022-Present",
+    "WorkExperience1Description": "Worked as a freelance artist in the field of digital arts.",
+    "WorkExperience2Work": "Freelance Traditional Artist",
+    "WorkExperience2Date": "2020-2021",
+    "WorkExperience2Description": "Worked as a freelance artist in the field of traditional arts.",
+    "TertiaryEducation": "Polytechnic University of the Philippines - Sta. Mesa",
+    "Course": "BS Computer Engineering",
+    "SecondaryEducation": "University of Perpetual Help System DALTA - Las Pinas",
+    "Track": "Science, Technology, Engineering, and Mathematics",
+    "PrimaryEducation": "Young Achiever's International School"
 }

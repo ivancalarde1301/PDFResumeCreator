@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PDFResumeCreator")]
+[assembly: AssemblyTitle("PDFResumeCreate")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PDFResumeCreator")]
+[assembly: AssemblyProduct("PDFResumeCreate")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2b13fb08-d9a2-49af-8199-6daf8b87f756")]
+[assembly: Guid("34e2040b-40e3-4f57-8c64-c799d710e8db")]
 
 // Version information for an assembly consists of the following four values:
 //
