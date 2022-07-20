@@ -91,11 +91,56 @@ namespace PDFResumeCreate
             docx.Open();
             Chunk separator = new Chunk("_____________________________________________________________________");
             Paragraph name = new Paragraph(textBoxFirstName.Text + " " + textBoxMiddleName.Text + " " + textBoxLastName.Text, FontFactory.GetFont("Arial", 25));
-            Paragraph pos = new Paragraph(textBoxPosition.Text, FontFactory.GetFont("Arial", 15));
+            Paragraph position = new Paragraph(textBoxPosition.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph email = new Paragraph(textBoxEmail.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph phone = new Paragraph(textBoxPhone.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph url = new Paragraph(textBoxURL.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph address = new Paragraph(textBoxUBL.Text + "," + textBoxStreet.Text + "," + textBoxBarangay.Text + "," +
+                                              textBoxZipCode.Text + "," + textBoxCity.Text + "," + textBoxProvince.Text + "," +
+                                              textBoxRegion.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph workexperience = new Paragraph(labelWorkExperience.Text, FontFactory.GetFont("Arial", 15));
+            Paragraph workexperience1work = new Paragraph(textBoxWorkExperience1.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph workexperience1date = new Paragraph(textBoxWorkExperience1Date.Text, FontFactory.GetFont("Arial", 10));
+            Paragraph workexperience1description = new Paragraph(textBoxWorkExperience1Description.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph workexperience2work = new Paragraph(textBoxWorkExperience2.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph workexperience2date = new Paragraph(textBoxWorkExperience2Date.Text, FontFactory.GetFont("Arial", 10));
+            Paragraph workexperience2description = new Paragraph(textBoxWorkExperience2Description.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph education = new Paragraph(labelEducation.Text, FontFactory.GetFont("Arial", 15));
+            Paragraph tertiaryeducationlabel = new Paragraph(labelTertiaryEducation.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph tertiaryeducation = new Paragraph(textBoxTertiaryEducation.Text, FontFactory.GetFont("Arial", 10));
+            Paragraph course = new Paragraph(textBoxCourse.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph secondaryeducationlabel = new Paragraph(labelSecondaryEducation.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph secondaryeducation = new Paragraph(textBoxSecondaryEducation.Text, FontFactory.GetFont("Arial", 10));
+            Paragraph track = new Paragraph(textBoxTrack.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph primaryeducationlabel = new Paragraph(labelPrimaryEducation.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph primaryeducation = new Paragraph(textBoxPrimaryEducation.Text, FontFactory.GetFont("Arial", 10));
             MessageBox.Show("PDF Resume Created!");
             docx.Add(separator);
             docx.Add(name);
-            docx.Add(pos);
+            docx.Add(position);
+            docx.Add(email);
+            docx.Add(phone);
+            docx.Add(url);
+            docx.Add(address);
+            docx.Add(separator);
+            docx.Add(workexperience);
+            docx.Add(workexperience1work);
+            docx.Add(workexperience1date);
+            docx.Add(workexperience1description);
+            docx.Add(workexperience2work);
+            docx.Add(workexperience2date);
+            docx.Add(workexperience2description);
+            docx.Add(separator);
+            docx.Add(education);
+            docx.Add(tertiaryeducationlabel);
+            docx.Add(tertiaryeducation);
+            docx.Add(course);
+            docx.Add(secondaryeducationlabel);
+            docx.Add(secondaryeducation);
+            docx.Add(track);
+            docx.Add(primaryeducationlabel);
+            docx.Add(primaryeducation);
+            docx.Add(separator);
             docx.Close();
         }
     }
