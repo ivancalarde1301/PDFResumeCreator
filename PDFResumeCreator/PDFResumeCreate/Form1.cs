@@ -86,6 +86,62 @@ namespace PDFResumeCreate
 
         private void buttonCreateResume_Click(object sender, EventArgs e)
         {
+            Document docx = new Document();
+            PdfWriter.GetInstance(docx, new FileStream(@"C:\Users\ivanc\Downloads\Resume.pdf", FileMode.Create));
+            docx.Open();
+            Chunk separator = new Chunk("____________________________________________________________________________");
+            Paragraph name = new Paragraph(textBoxFirstName.Text + " " + textBoxMiddleName.Text + " " + textBoxLastName.Text, FontFactory.GetFont("Arial", 25));
+            Paragraph position = new Paragraph(textBoxPosition.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph email = new Paragraph(textBoxEmail.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph phone = new Paragraph(textBoxPhone.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph url = new Paragraph(textBoxURL.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph address = new Paragraph(textBoxUBL.Text + "," + " " + textBoxStreet.Text + "," + " " + textBoxVillage.Text + "," + " " +
+                                              textBoxBarangay.Text + "," + " " + textBoxCity.Text + "," + " " + textBoxProvince.Text + "," + " " +
+                                              textBoxRegion.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph workexperience = new Paragraph(labelWorkExperience.Text, FontFactory.GetFont("Arial", 15));
+            Paragraph workexperience1work = new Paragraph(textBoxWorkExperience1.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph workexperience1date = new Paragraph(textBoxWorkExperience1Date.Text, FontFactory.GetFont("Arial", 10));
+            Paragraph workexperience1description = new Paragraph(textBoxWorkExperience1Description.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph workexperience2work = new Paragraph(textBoxWorkExperience2.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph workexperience2date = new Paragraph(textBoxWorkExperience2Date.Text, FontFactory.GetFont("Arial", 10));
+            Paragraph workexperience2description = new Paragraph(textBoxWorkExperience2Description.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph education = new Paragraph(labelEducation.Text, FontFactory.GetFont("Arial", 15));
+            Paragraph tertiaryeducationlabel = new Paragraph(labelTertiaryEducation.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph tertiaryeducation = new Paragraph(textBoxTertiaryEducation.Text, FontFactory.GetFont("Arial", 10));
+            Paragraph course = new Paragraph(textBoxCourse.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph secondaryeducationlabel = new Paragraph(labelSecondaryEducation.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph secondaryeducation = new Paragraph(textBoxSecondaryEducation.Text, FontFactory.GetFont("Arial", 10));
+            Paragraph track = new Paragraph(textBoxTrack.Text, FontFactory.GetFont("Arial", 8));
+            Paragraph primaryeducationlabel = new Paragraph(labelPrimaryEducation.Text, FontFactory.GetFont("Arial", 12));
+            Paragraph primaryeducation = new Paragraph(textBoxPrimaryEducation.Text, FontFactory.GetFont("Arial", 10));
+            docx.Add(separator);
+            docx.Add(name);
+            docx.Add(position);
+            docx.Add(email);
+            docx.Add(phone);
+            docx.Add(url);
+            docx.Add(address);
+            docx.Add(separator);
+            docx.Add(workexperience);
+            docx.Add(workexperience1work);
+            docx.Add(workexperience1date);
+            docx.Add(workexperience1description);
+            docx.Add(workexperience2work);
+            docx.Add(workexperience2date);
+            docx.Add(workexperience2description);
+            docx.Add(separator);
+            docx.Add(education);
+            docx.Add(tertiaryeducationlabel);
+            docx.Add(tertiaryeducation);
+            docx.Add(course);
+            docx.Add(secondaryeducationlabel);
+            docx.Add(secondaryeducation);
+            docx.Add(track);
+            docx.Add(primaryeducationlabel);
+            docx.Add(primaryeducation);
+            docx.Add(separator);
+            docx.Close();
+
             Boolean isFill = true;
             if (textBoxFirstName.Text == "")
             {
@@ -314,126 +370,37 @@ namespace PDFResumeCreate
             }
             if (!isFill)
             {
-                MessageBox.Show("Fill the blanks with your information.");
+                MessageBox.Show("Fill the blanks.");
             }
             else
             {
-                MessageBox.Show("Resume created successfully!");
+                MessageBox.Show("Resume created successfully! Please rename your PDF file.");
+                textBoxFirstName.Text = "";
+                textBoxMiddleName.Text = "";
+                textBoxLastName.Text = "";
+                textBoxPosition.Text = "";
+                textBoxEmail.Text = "";
+                textBoxPhone.Text = "";
+                textBoxURL.Text = "";
+                textBoxUBL.Text = "";
+                textBoxStreet.Text = "";
+                textBoxVillage.Text = "";
+                textBoxBarangay.Text = "";
+                textBoxCity.Text = "";
+                textBoxProvince.Text = "";
+                textBoxRegion.Text = "";
+                textBoxWorkExperience1.Text = "";
+                textBoxWorkExperience1Date.Text = "";
+                textBoxWorkExperience1Description.Text = "";
+                textBoxWorkExperience2.Text = "";
+                textBoxWorkExperience2Date.Text = "";
+                textBoxWorkExperience2Description.Text = "";
+                textBoxTertiaryEducation.Text = "";
+                textBoxCourse.Text = "";
+                textBoxSecondaryEducation.Text = "";
+                textBoxTrack.Text = "";
+                textBoxPrimaryEducation.Text = "";
             }
-
-
-
-
-
-
-
-
-
-
-            /*textBoxMiddleName.Text == null || textBoxLastName.Text == null ||
-            textBoxPosition.Text == null || textBoxEmail.Text == null || textBoxPhone.Text == null ||
-            textBoxURL.Text == null || textBoxUBL.Text == null || textBoxStreet.Text == null ||
-            textBoxBarangay.Text == null || textBoxZipCode.Text == null || textBoxCity.Text == null ||
-            textBoxProvince.Text == null || textBoxRegion.Text == null || textBoxWorkExperience1.Text == null ||
-            textBoxWorkExperience1Date.Text == null || textBoxWorkExperience1Description.Text == null || textBoxWorkExperience2.Text == null ||
-            textBoxWorkExperience2Date.Text == null || textBoxWorkExperience2Description.Text == null || textBoxTertiaryEducation.Text == null ||
-            textBoxCourse.Text == null || textBoxSecondaryEducation.Text == null || textBoxTrack.Text == null ||
-            textBoxPrimaryEducation.Text == null)*//*
-        {
-            MessageBox.Show("Fill the blanks with your information.");
-        }
-        if (textBoxFirstName.Text == "" || textBoxMiddleName.Text == "" || textBoxLastName.Text == "" ||
-            textBoxPosition.Text == "" || textBoxEmail.Text == "" || textBoxPhone.Text == "" ||
-            textBoxURL.Text == "" || textBoxUBL.Text == "" || textBoxStreet.Text == "" ||
-            textBoxBarangay.Text == "" || textBoxZipCode.Text == "" || textBoxCity.Text == "" ||
-            textBoxProvince.Text == "" || textBoxRegion.Text == "" || textBoxWorkExperience1.Text == "" ||
-            textBoxWorkExperience1Date.Text == "" || textBoxWorkExperience1Description.Text == "" || textBoxWorkExperience2.Text == "" ||
-            textBoxWorkExperience2Date.Text == "" || textBoxWorkExperience2Description.Text == "" || textBoxTertiaryEducation.Text == "" ||
-            textBoxCourse.Text == "" || textBoxSecondaryEducation.Text == "" || textBoxTrack.Text == "" ||
-            textBoxPrimaryEducation.Text == "")
-        {
-            MessageBox.Show("PDF Resume Created!");
-        }*/
-            Document docx = new Document();
-            PdfWriter.GetInstance(docx, new FileStream(@"C:\Users\ivanc\Downloads\Resume.pdf", FileMode.Create));
-            docx.Open();
-            Chunk separator = new Chunk("_____________________________________________________________________");
-            Paragraph name = new Paragraph(textBoxFirstName.Text + " " + textBoxMiddleName.Text + " " + textBoxLastName.Text, FontFactory.GetFont("Arial", 25));
-            Paragraph position = new Paragraph(textBoxPosition.Text, FontFactory.GetFont("Arial", 12));
-            Paragraph email = new Paragraph(textBoxEmail.Text, FontFactory.GetFont("Arial", 8));
-            Paragraph phone = new Paragraph(textBoxPhone.Text, FontFactory.GetFont("Arial", 8));
-            Paragraph url = new Paragraph(textBoxURL.Text, FontFactory.GetFont("Arial", 8));
-            Paragraph address = new Paragraph(textBoxUBL.Text + "," + textBoxStreet.Text + "," + textBoxVillage.Text + "," +
-                                              textBoxBarangay.Text + "," + textBoxCity.Text + "," + textBoxProvince.Text + "," +
-                                              textBoxRegion.Text, FontFactory.GetFont("Arial", 8));
-            Paragraph workexperience = new Paragraph(labelWorkExperience.Text, FontFactory.GetFont("Arial", 15));
-            Paragraph workexperience1work = new Paragraph(textBoxWorkExperience1.Text, FontFactory.GetFont("Arial", 12));
-            Paragraph workexperience1date = new Paragraph(textBoxWorkExperience1Date.Text, FontFactory.GetFont("Arial", 10));
-            Paragraph workexperience1description = new Paragraph(textBoxWorkExperience1Description.Text, FontFactory.GetFont("Arial", 8));
-            Paragraph workexperience2work = new Paragraph(textBoxWorkExperience2.Text, FontFactory.GetFont("Arial", 12));
-            Paragraph workexperience2date = new Paragraph(textBoxWorkExperience2Date.Text, FontFactory.GetFont("Arial", 10));
-            Paragraph workexperience2description = new Paragraph(textBoxWorkExperience2Description.Text, FontFactory.GetFont("Arial", 8));
-            Paragraph education = new Paragraph(labelEducation.Text, FontFactory.GetFont("Arial", 15));
-            Paragraph tertiaryeducationlabel = new Paragraph(labelTertiaryEducation.Text, FontFactory.GetFont("Arial", 12));
-            Paragraph tertiaryeducation = new Paragraph(textBoxTertiaryEducation.Text, FontFactory.GetFont("Arial", 10));
-            Paragraph course = new Paragraph(textBoxCourse.Text, FontFactory.GetFont("Arial", 8));
-            Paragraph secondaryeducationlabel = new Paragraph(labelSecondaryEducation.Text, FontFactory.GetFont("Arial", 12));
-            Paragraph secondaryeducation = new Paragraph(textBoxSecondaryEducation.Text, FontFactory.GetFont("Arial", 10));
-            Paragraph track = new Paragraph(textBoxTrack.Text, FontFactory.GetFont("Arial", 8));
-            Paragraph primaryeducationlabel = new Paragraph(labelPrimaryEducation.Text, FontFactory.GetFont("Arial", 12));
-            Paragraph primaryeducation = new Paragraph(textBoxPrimaryEducation.Text, FontFactory.GetFont("Arial", 10));
-            textBoxFirstName.Text = "";
-            textBoxMiddleName.Text = "";
-            textBoxLastName.Text = "";
-            textBoxPosition.Text = "";
-            textBoxEmail.Text = "";
-            textBoxPhone.Text = "";
-            textBoxURL.Text = "";
-            textBoxUBL.Text = "";
-            textBoxStreet.Text = "";
-            textBoxVillage.Text = "";
-            textBoxBarangay.Text = "";
-            textBoxCity.Text = "";
-            textBoxProvince.Text = "";
-            textBoxRegion.Text = "";
-            textBoxWorkExperience1.Text = "";
-            textBoxWorkExperience1Date.Text = "";
-            textBoxWorkExperience1Description.Text = "";
-            textBoxWorkExperience2.Text = "";
-            textBoxWorkExperience2Date.Text = "";
-            textBoxWorkExperience2Description.Text = "";
-            textBoxTertiaryEducation.Text = "";
-            textBoxCourse.Text = "";
-            textBoxSecondaryEducation.Text = "";
-            textBoxTrack.Text = "";
-            textBoxPrimaryEducation.Text = "";
-            docx.Add(separator);
-            docx.Add(name);
-            docx.Add(position);
-            docx.Add(email);
-            docx.Add(phone);
-            docx.Add(url);
-            docx.Add(address);
-            docx.Add(separator);
-            docx.Add(workexperience);
-            docx.Add(workexperience1work);
-            docx.Add(workexperience1date);
-            docx.Add(workexperience1description);
-            docx.Add(workexperience2work);
-            docx.Add(workexperience2date);
-            docx.Add(workexperience2description);
-            docx.Add(separator);
-            docx.Add(education);
-            docx.Add(tertiaryeducationlabel);
-            docx.Add(tertiaryeducation);
-            docx.Add(course);
-            docx.Add(secondaryeducationlabel);
-            docx.Add(secondaryeducation);
-            docx.Add(track);
-            docx.Add(primaryeducationlabel);
-            docx.Add(primaryeducation);
-            docx.Add(separator);
-            docx.Close();
         }
     }
 }

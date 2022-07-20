@@ -593,7 +593,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 489);
+            this.ClientSize = new System.Drawing.Size(802, 495);
             this.Controls.Add(this.buttonImportInformation);
             this.Controls.Add(this.buttonCreateResume);
             this.Controls.Add(this.textBoxPrimaryEducation);
@@ -651,8 +651,11 @@
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.labelPersonalInformation);
             this.Controls.Add(this.labelPDFResumeCreator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "PDF Resume Creator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
